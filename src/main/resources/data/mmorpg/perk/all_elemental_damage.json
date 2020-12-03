@@ -1,0 +1,18 @@
+{
+  "type": "STAT",
+  "identifier": "all_elemental_damage",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/elemental/all_elemental_damage.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 2.0,
+      "second": 0.0,
+      "stat": "all_elemental_damage",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

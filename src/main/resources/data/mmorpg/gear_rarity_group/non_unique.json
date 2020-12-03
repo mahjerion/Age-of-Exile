@@ -1,0 +1,13 @@
+{
+  "rarities": [
+    "magical",
+    "common",
+    "mythic",
+    "relic",
+    "legendary",
+    "rare",
+    "epic",
+    "antique"
+  ],
+  "id": "non_unique"
+}

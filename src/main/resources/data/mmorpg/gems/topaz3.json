@@ -1,0 +1,39 @@
+{
+  "socket_type": "topaz",
+  "text_format": "YELLOW",
+  "on_armor_stats": [
+    {
+      "first_min": 6.4,
+      "first_max": 19.2,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "thunder_resist",
+      "type": "FLAT"
+    }
+  ],
+  "on_jewelry_stats": [
+    {
+      "first_min": 6.4,
+      "first_max": 12.8,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "spell_thunder_damage",
+      "type": "FLAT"
+    }
+  ],
+  "on_weapons_stats": [
+    {
+      "first_min": 0.5,
+      "first_max": 1.5,
+      "second_min": 1.0,
+      "second_max": 3.0,
+      "stat": "thunder_weapon_damage",
+      "type": "FLAT"
+    }
+  ],
+  "item_id": "mmorpg:gems/topaz/3",
+  "identifier": "topaz3",
+  "required_item_level": 0.5,
+  "weight": 250,
+  "effective_level": 0.5
+}

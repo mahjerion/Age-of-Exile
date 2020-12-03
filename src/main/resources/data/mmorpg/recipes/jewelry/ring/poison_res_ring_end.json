@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EME",
+    "MEM",
+    "EME"
+  ],
+  "key": {
+    "E": {
+      "item": "mmorpg:gear_mat/essences/nature"
+    },
+    "M": {
+      "item": "mmorpg:gear_mat/ore/ore4"
+    }
+  },
+  "result": {
+    "item": "mmorpg:jewelry/ring/poison_res_ring_end"
+  }
+}

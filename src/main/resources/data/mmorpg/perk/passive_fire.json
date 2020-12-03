@@ -1,0 +1,19 @@
+{
+  "type": "MAJOR",
+  "identifier": "passive_fire",
+  "spell": "passive_fire",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/spells/icons/passive_fire.png",
+  "one_of_a_kind": "passive_spell",
+  "is_entry": false,
+  "lvl_req": 20,
+  "stats": [
+    {
+      "first": 1.0,
+      "second": 0.0,
+      "stat": "unlock_passive_fire",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

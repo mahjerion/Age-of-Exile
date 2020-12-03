@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mmorpg:items/armor/leather/pants/leather_pants0"
+  }
+}

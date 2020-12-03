@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EME",
+    "MEM",
+    "EME"
+  ],
+  "key": {
+    "E": {
+      "item": "mmorpg:gear_mat/essences/water"
+    },
+    "M": {
+      "item": "mmorpg:gear_mat/ore/ore1"
+    }
+  },
+  "result": {
+    "item": "mmorpg:jewelry/ring/cold_res_ring_low"
+  }
+}

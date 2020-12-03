@@ -1,0 +1,18 @@
+{
+  "type": "STAT",
+  "identifier": "str",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/core/strength.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 1.0,
+      "second": 0.0,
+      "stat": "strength",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

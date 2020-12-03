@@ -1,0 +1,18 @@
+{
+  "id": "low",
+  "min": 0,
+  "rank": 0,
+  "drop_unique_gears": false,
+  "drop_runes": false,
+  "drop_gems": false,
+  "drop_currency": false,
+  "drop_lvl_rewards": false,
+  "drop_exp": true,
+  "can_salvage_loot": false,
+  "favor_drain_per_item": 0.0,
+  "excludedRarities": [
+    "mythic",
+    "legendary",
+    "relic"
+  ]
+}

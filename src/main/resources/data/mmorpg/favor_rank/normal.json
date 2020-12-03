@@ -1,0 +1,14 @@
+{
+  "id": "normal",
+  "min": 1,
+  "rank": 1,
+  "drop_unique_gears": true,
+  "drop_runes": true,
+  "drop_gems": true,
+  "drop_currency": true,
+  "drop_lvl_rewards": true,
+  "drop_exp": true,
+  "can_salvage_loot": true,
+  "favor_drain_per_item": 1.0,
+  "excludedRarities": []
+}

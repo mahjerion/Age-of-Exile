@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "mmorpg:items/uniques/weapon/will_of_flora"
+  }
+}

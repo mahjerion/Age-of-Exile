@@ -1,0 +1,18 @@
+{
+  "type": "SPECIAL",
+  "identifier": "spell_thunder_damage_big",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/elemental/spell_thunder_damage.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 5.0,
+      "second": 0.0,
+      "stat": "spell_thunder_damage",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

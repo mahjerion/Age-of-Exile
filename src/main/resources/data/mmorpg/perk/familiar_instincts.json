@@ -1,0 +1,32 @@
+{
+  "type": "MAJOR",
+  "identifier": "familiar_instincts",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/game_changers/familiar_instincts.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 25.0,
+      "second": 0.0,
+      "stat": "dodge_to_ele_doddge",
+      "type": "FLAT",
+      "scaleToLevel": false
+    },
+    {
+      "first": -25.0,
+      "second": 0.0,
+      "stat": "armor",
+      "type": "GLOBAL_INCREASE",
+      "scaleToLevel": false
+    },
+    {
+      "first": -25.0,
+      "second": 0.0,
+      "stat": "magic_shield",
+      "type": "GLOBAL_INCREASE",
+      "scaleToLevel": false
+    }
+  ]
+}

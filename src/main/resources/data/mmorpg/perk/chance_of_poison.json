@@ -1,0 +1,18 @@
+{
+  "type": "STAT",
+  "identifier": "chance_of_poison",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/misc/chance_of_poison.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 3.0,
+      "second": 0.0,
+      "stat": "chance_of_poison",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "START",
+  "identifier": "talent_start",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "",
+  "one_of_a_kind": "start",
+  "is_entry": true,
+  "lvl_req": 1,
+  "stats": []
+}

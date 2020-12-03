@@ -1,0 +1,39 @@
+{
+  "socket_type": "opal",
+  "text_format": "GOLD",
+  "on_armor_stats": [
+    {
+      "first_min": 5.0,
+      "first_max": 15.0,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "armor",
+      "type": "FLAT"
+    }
+  ],
+  "on_jewelry_stats": [
+    {
+      "first_min": 2.4,
+      "first_max": 7.2000003,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "critical_hit",
+      "type": "FLAT"
+    }
+  ],
+  "on_weapons_stats": [
+    {
+      "first_min": 3.6000001,
+      "first_max": 12.0,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "critical_damage",
+      "type": "FLAT"
+    }
+  ],
+  "item_id": "mmorpg:gems/opal/1",
+  "identifier": "opal1",
+  "required_item_level": 0.1,
+  "weight": 5000,
+  "effective_level": 0.1
+}

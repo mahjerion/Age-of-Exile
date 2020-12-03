@@ -1,0 +1,18 @@
+{
+  "type": "SPECIAL",
+  "identifier": "ele_wand_damage_big",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/weapon/ele_wand_damage.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 5.0,
+      "second": 0.0,
+      "stat": "ele_wand_damage",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "STAT",
+  "identifier": "magic_shield_regen",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/main/magic_shield_regen.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 5.0,
+      "second": 0.0,
+      "stat": "magic_shield_regen",
+      "type": "LOCAL_INCREASE",
+      "scaleToLevel": false
+    }
+  ]
+}

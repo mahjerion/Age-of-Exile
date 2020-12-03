@@ -102,39 +102,3 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 jar {
     from "LICENSE"
 }
-
-// CURSEFORGE STUFF
-
-curseforge {
-
-    def curseProp = new Properties()
-    File secretPropsFile = file("key.properties")
-    curseProp.load(secretPropsFile.newInputStream())
-
-    project {
-        apiKey = curseProp.getProperty('curseKey')
-        id = "${curse_id}"
-        releaseType = "${curse_release}"
-        changelogType = 'markdown'
-        changelog = file('CHANGELOG.md')
-        addGameVersion("${project.minecraft_version}")
-        addGameVersion("Fabric")
-        addGameVersion("Java 8")
-
-        relations {
-            requiredDependency 'fabric-api'
-            requiredDependency 'library-of-exile'
-            requiredDependency 'curios-fabric'
-			requiredDependency 'patchouli-fabric'           
-        }
-        mainArtifact(remapJar)
-
-        afterEvaluate {
-            uploadTask.dependsOn("remapJar")
-        }
-    }
-    options {
-        forgeGradleIntegration = false
-    }
-}
-

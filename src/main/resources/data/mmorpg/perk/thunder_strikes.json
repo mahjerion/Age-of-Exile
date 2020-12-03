@@ -1,0 +1,18 @@
+{
+  "type": "MAJOR",
+  "identifier": "thunder_strikes",
+  "spell": "thunder_strikes",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/spells/icons/thunder_strikes.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 1.0,
+      "second": 0.0,
+      "stat": "unlock_thunder_strikes",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

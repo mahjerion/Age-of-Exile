@@ -1,6 +1,12 @@
 ### v1.7.7
 
 * increased mob hp
+* vit gives more hp but less regen
+* will gives more ms but slightly less regen
+* fix restoration to magic shield stat not working on spell effects
+* jewelry is a lot more durable now
+* you no longer drop weapons you're holding if you're not able to use it (you can use axes again!)
+* some general perk and runeword balance
 
 ### v.1.7.6
 * hotfix stuff like lava dmg breaking whole armor on lvl 50 because of enviro damage scaling by disabling enviro damage scaling by default

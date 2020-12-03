@@ -1,0 +1,18 @@
+{
+  "type": "SPECIAL",
+  "identifier": "ele_trident_damage_big",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/weapon/ele_trident_damage.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 5.0,
+      "second": 0.0,
+      "stat": "ele_trident_damage",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

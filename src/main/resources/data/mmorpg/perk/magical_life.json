@@ -1,0 +1,18 @@
+{
+  "type": "MAJOR",
+  "identifier": "magical_life",
+  "spell": "",
+  "lock_under_adv": "",
+  "icon": "mmorpg:textures/gui/stat_icons/game_changers/magical_life.png",
+  "is_entry": false,
+  "lvl_req": 1,
+  "stats": [
+    {
+      "first": 50.0,
+      "second": 0.0,
+      "stat": "convert_ms_to_hp",
+      "type": "FLAT",
+      "scaleToLevel": false
+    }
+  ]
+}

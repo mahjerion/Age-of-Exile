@@ -1,0 +1,39 @@
+{
+  "socket_type": "ruby",
+  "text_format": "RED",
+  "on_armor_stats": [
+    {
+      "first_min": 5.6,
+      "first_max": 16.8,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "fire_resist",
+      "type": "FLAT"
+    }
+  ],
+  "on_jewelry_stats": [
+    {
+      "first_min": 5.6,
+      "first_max": 11.2,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "spell_fire_damage",
+      "type": "FLAT"
+    }
+  ],
+  "on_weapons_stats": [
+    {
+      "first_min": 0.5,
+      "first_max": 1.5,
+      "second_min": 1.0,
+      "second_max": 3.0,
+      "stat": "fire_weapon_damage",
+      "type": "FLAT"
+    }
+  ],
+  "item_id": "mmorpg:gems/ruby/2",
+  "identifier": "ruby2",
+  "required_item_level": 0.25,
+  "weight": 1000,
+  "effective_level": 0.25
+}

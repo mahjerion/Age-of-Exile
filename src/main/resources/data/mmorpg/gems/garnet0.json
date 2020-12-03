@@ -1,0 +1,39 @@
+{
+  "socket_type": "garnet",
+  "text_format": "GREEN",
+  "on_armor_stats": [
+    {
+      "first_min": 4.0,
+      "first_max": 15.0,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "dodge",
+      "type": "FLAT"
+    }
+  ],
+  "on_jewelry_stats": [
+    {
+      "first_min": 3.0,
+      "first_max": 10.0,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "critical_damage",
+      "type": "FLAT"
+    }
+  ],
+  "on_weapons_stats": [
+    {
+      "first_min": 2.0,
+      "first_max": 6.0,
+      "second_min": 0.0,
+      "second_max": 0.0,
+      "stat": "critical_hit",
+      "type": "FLAT"
+    }
+  ],
+  "item_id": "mmorpg:gems/garnet/0",
+  "identifier": "garnet0",
+  "required_item_level": 0.0,
+  "weight": 20000,
+  "effective_level": 0.0
+}
