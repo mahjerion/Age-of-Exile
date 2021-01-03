@@ -289,6 +289,8 @@ public enum Words implements IAutoLocName {
 
     hasPrimaryStats("Has Primary Stats"),
 
+    CanOnlyUse10times("Can only use 10 times"),
+
     hasSuffix("Has Suffix"),
 
     hasPrefix("Has Prefix"),

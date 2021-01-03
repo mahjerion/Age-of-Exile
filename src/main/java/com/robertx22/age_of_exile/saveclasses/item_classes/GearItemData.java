@@ -72,6 +72,9 @@ public class GearItemData implements ICommonDataItem<GearRarity> {
     public int level = 1; // lvl
 
     @Store
+    public int timesLeveledUp = 0;
+
+    @Store
     public String gear_type = "";
 
     @Store

@@ -44,7 +44,7 @@ public class HealIfHitChannel<T extends LivingEntity & IBossMob> extends Channel
         EntityCap.UnitData unitdata = Load.Unit(en);
 
         ResourcesData.Context hp = new ResourcesData.Context(unitdata, en, ResourcesData.Type.HEALTH,
-            en.getMaxHealth() * 0.01F,
+            en.getMaxHealth() * 0.005F,
             ResourcesData.Use.RESTORE
         );
 

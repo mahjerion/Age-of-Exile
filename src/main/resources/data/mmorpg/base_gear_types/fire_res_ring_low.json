@@ -10,7 +10,7 @@
       "firstMax": 15.0,
       "secondMin": 0.0,
       "secondMax": 0.0,
-      "stat": "thunder_resist",
+      "stat": "fire_resist",
       "type": "flat"
     }
   ],
