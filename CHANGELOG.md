@@ -1,6 +1,5 @@
 ### v1.7.8
 
-* new currency: Crystal of Ascension! Level up your items up to 10 times.
 * fixed ruby ring giving wrong stat
 * corrupted golem regens a bit less health below 50% hp
 
