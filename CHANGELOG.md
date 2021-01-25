@@ -1,3 +1,8 @@
+### v1.7.9
+
+* when in a party, you now gain an additional 20% exp for each party member. 1 player = 100% exp, 2 players = 120%/2 = 60%, 3 players = 140%/3 = 46.67%, etc.
+* doubled xp gain and xp required. Functionally, this shouldn't change anything, but it does help with lower XP values being split and then floored to 0 when cast to int.
+
 ### v1.7.8
 
 * fixed ruby ring giving wrong stat
