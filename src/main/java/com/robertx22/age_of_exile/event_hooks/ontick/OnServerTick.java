@@ -81,7 +81,7 @@ public class OnServerTick implements ServerTickEvents.EndTick {
                         boolean restored = false;
 
                         boolean canHeal = player.getHungerManager()
-                            .getFoodLevel() >= 16;
+                            .getFoodLevel() >= 15;
 
                         if (canHeal) {
                             if (player.getHealth() < player.getMaxHealth()) {

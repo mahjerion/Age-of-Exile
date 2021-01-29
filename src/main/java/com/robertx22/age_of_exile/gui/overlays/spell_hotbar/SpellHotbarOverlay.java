@@ -7,15 +7,21 @@ import com.robertx22.age_of_exile.database.data.spells.spell_classes.bases.Spell
 import com.robertx22.age_of_exile.event_hooks.ontick.OnClientTick;
 import com.robertx22.age_of_exile.mixin_methods.OnKeyMethod;
 import com.robertx22.age_of_exile.mmorpg.Ref;
+import com.robertx22.age_of_exile.mmorpg.registers.client.KeybindsRegister;
 import com.robertx22.age_of_exile.saveclasses.spells.SpellCastingData;
 import com.robertx22.age_of_exile.saveclasses.spells.SpellData;
 import com.robertx22.age_of_exile.uncommon.datasaving.Load;
+import com.robertx22.library_of_exile.utils.CLOC;
+import com.robertx22.library_of_exile.utils.GuiUtils;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawableHelper;
 import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
+
+import java.util.Locale;
 
 public class SpellHotbarOverlay extends DrawableHelper implements HudRenderCallback {
 
@@ -138,6 +144,12 @@ public class SpellHotbarOverlay extends DrawableHelper implements HudRenderCallb
                 mc.getTextureManager()
                         .bindTexture(COOLDOWN_TEX);
                 this.drawTexture(matrix, xs, ys, 0, 0, 32, (int) (32 * percent), 32, 32);
+
+                String txt = CLOC.translate(KeybindsRegister.USE_SPELL_KEY.getBoundKeyLocalizedText())
+                        .toUpperCase(Locale.ROOT);
+
+                GuiUtils.renderScaledText(matrix,
+                        xs + 23, ys + 23, 1.4F, txt, Formatting.GREEN);
             }
 
         }

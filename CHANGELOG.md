@@ -1,3 +1,8 @@
+### v1.7.10
+
+* (datapack) you can now have up to 50 of each potion effect type, up from 20.
+* you can now rebind your skill key. also, blocking will prevent you from accidentally firing off your spell. hold v to scroll through the skill hotbar (what r used to do), and press r (default) to fire your spell.
+
 ### v1.7.9
 
 * when in a party, you now gain an additional 20% exp for each party member. 1 player = 100% exp, 2 players = 120%/2 = 60%, 3 players = 140%/3 = 46.67%, etc.

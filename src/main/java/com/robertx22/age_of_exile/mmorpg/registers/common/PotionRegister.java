@@ -27,18 +27,18 @@ public class PotionRegister {
 
     public PotionRegister() {
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 50; i++) {
             String key = ExileStatusEffect.getIdPath(StatusEffectType.NEUTRAL, i);
             ExileStatusEffect eff = Registry.register(Registry.STATUS_EFFECT, new Identifier(Ref.MODID, key), new ExileStatusEffect(StatusEffectType.NEUTRAL, i));
             exileEffectsMap.put(key, eff);
         }
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 50; i++) {
             String key = ExileStatusEffect.getIdPath(StatusEffectType.HARMFUL, i);
 
             ExileStatusEffect eff = Registry.register(Registry.STATUS_EFFECT, new Identifier(Ref.MODID, key), new ExileStatusEffect(StatusEffectType.HARMFUL, i));
             exileEffectsMap.put(key, eff);
         }
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 50; i++) {
             String key = ExileStatusEffect.getIdPath(StatusEffectType.BENEFICIAL, i);
 
             ExileStatusEffect eff = Registry.register(Registry.STATUS_EFFECT, new Identifier(Ref.MODID, key), new ExileStatusEffect(StatusEffectType.BENEFICIAL, i));
