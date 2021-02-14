@@ -1,3 +1,7 @@
+### v1.7.11
+* fixed mob scaling in non-Overworld dimensions.
+* added level rewards which are configurable by datapacks
+
 ### v1.7.10
 
 * (datapack) you can now have up to 50 of each potion effect type, up from 20.

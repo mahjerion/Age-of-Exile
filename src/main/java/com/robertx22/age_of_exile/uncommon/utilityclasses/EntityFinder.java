@@ -37,8 +37,8 @@ public class EntityFinder {
                 return list.stream()
                     .filter(x -> {
                         if (setup.isCasterPlayer()) {
-                            if (isPlayer(x)) {
-                                if (x.world.isClient) {
+                            if (isPlayer(x)) { // if target is player
+                                if (x.world.isClient) { //
                                     return true;
                                 } else {
 

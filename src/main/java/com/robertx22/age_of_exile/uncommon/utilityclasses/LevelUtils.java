@@ -55,7 +55,7 @@ public class LevelUtils {
             lvl = determineLevelPerDistanceFromSpawn(sw, pos, dimConfig);
         }
 
-        lvl = MathHelper.clamp(dimConfig.min_lvl + lvl, dimConfig.min_lvl, dimConfig.max_lvl);
+        lvl = MathHelper.clamp(dimConfig.min_lvl, dimConfig.min_lvl, dimConfig.max_lvl);
 
         lvl = MathHelper.clamp(lvl, 1, ModConfig.get().Server.MAX_LEVEL);
 
@@ -74,10 +74,19 @@ public class LevelUtils {
 
         int lvl = 1;
 
-        lvl = (int) (1 + (distance / (config.mob_lvl_per_distance)));
+        lvl = (int) (config.min_lvl + (distance / (config.mob_lvl_per_distance)));
 
         return MathHelper.clamp(lvl, config.min_lvl, config.max_lvl);
 
+    }
+
+    public static double getBlocksForEachLevelDistance(ServerWorld world) {
+        DimensionConfig config = SlashRegistry.getDimensionConfig(world);
+
+        double scale = MathHelper.clamp(world.getDimension()
+                .getCoordinateScale() / 3F, 1, Integer.MAX_VALUE);
+
+        return config.mob_lvl_per_distance / scale;
     }
 
 }

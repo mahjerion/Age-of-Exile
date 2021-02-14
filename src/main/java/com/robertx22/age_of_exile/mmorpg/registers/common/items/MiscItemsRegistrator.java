@@ -40,6 +40,8 @@ public class MiscItemsRegistrator extends BaseItemRegistrator {
 
     public VanillaExperienceChestItem VANILLA_EXP_CHEST = item(new VanillaExperienceChestItem(), "loot_crate/ench_exp_bag");
 
+    public LootTableItem LOOT_TABLE_ITEM = item(new LootTableItem(), "loot_table_chest");
+
     public Item NEWBIE_GEAR_BAG = item(new ItemNewbieGearBag(), "newbie_gear_bag");
     public Item INCRESE_MOB_RARITY = item(new ItemIncreaseRarityNearestEntity(), "increase_rarity_nearest_entity");
     public Item RUNEWORD = item(new RuneWordItem(), "runeword");

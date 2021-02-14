@@ -225,6 +225,7 @@ public class DamageEffect extends EffectData implements IArmorReducable, IPenetr
                 return false; // it's the same player, let him hit himself
             }
             if (TeamUtils.areOnSameTeam((ServerPlayerEntity) source, (ServerPlayerEntity) target)) {
+                cancelDamage();
                 return true;
             }
             PlayerEntity sp = (PlayerEntity) this.source;

@@ -5,6 +5,7 @@ import com.robertx22.age_of_exile.areas.area_modifiers.AreaModifiers;
 import com.robertx22.age_of_exile.capability.bases.EntityGears;
 import com.robertx22.age_of_exile.capability.bases.ICommonPlayerCap;
 import com.robertx22.age_of_exile.capability.bases.INeededForClient;
+import com.robertx22.age_of_exile.config.LevelRewardConfig;
 import com.robertx22.age_of_exile.config.forge.ModConfig;
 import com.robertx22.age_of_exile.database.data.EntityConfig;
 import com.robertx22.age_of_exile.database.data.gear_types.bases.BaseGearType;
@@ -34,6 +35,8 @@ import com.robertx22.age_of_exile.uncommon.localization.Chats;
 import com.robertx22.age_of_exile.uncommon.utilityclasses.EntityTypeUtils;
 import com.robertx22.age_of_exile.uncommon.utilityclasses.LevelUtils;
 import com.robertx22.age_of_exile.uncommon.utilityclasses.OnScreenMessageUtils;
+import com.robertx22.age_of_exile.uncommon.utilityclasses.PlayerUtils;
+import com.robertx22.age_of_exile.vanilla_mc.items.misc.LootTableItem;
 import com.robertx22.age_of_exile.vanilla_mc.packets.sync_cap.PlayerCaps;
 import com.robertx22.age_of_exile.vanilla_mc.packets.sync_cap.SyncCapabilityToClient;
 import com.robertx22.age_of_exile.vanilla_mc.potion_effects.EntityStatusEffectsData;
@@ -49,6 +52,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
+import java.util.Optional;
 import java.util.Random;
 import java.util.UUID;
 
@@ -797,8 +801,41 @@ public class EntityCap {
                     ModCriteria.PLAYER_LEVEL.trigger((ServerPlayerEntity) player);
                 }
 
+                // fully restore on lvlup
+                getResources()
+                        .modify(new ResourcesData.Context(this, player, ResourcesData.Type.MANA,
+                                Integer.MAX_VALUE,
+                                ResourcesData.Use.RESTORE
+                        ));
+                getResources()
+                        .modify(new ResourcesData.Context(this, player, ResourcesData.Type.HEALTH,
+                                Integer.MAX_VALUE,
+                                ResourcesData.Use.RESTORE
+                        ));
+                getResources()
+                        .modify(new ResourcesData.Context(this, player, ResourcesData.Type.BLOOD,
+                                Integer.MAX_VALUE,
+                                ResourcesData.Use.RESTORE
+                        ));
+                getResources()
+                        .modify(new ResourcesData.Context(this, player, ResourcesData.Type.MAGIC_SHIELD,
+                                Integer.MAX_VALUE,
+                                ResourcesData.Use.RESTORE
+                        ))
+                // fully restore on lvlup
+                ;
+
                 this.setLevel(level + 1, player);
                 setExp(getRemainingExp());
+
+                Optional<LevelRewardConfig> opt = ModConfig.get().LevelRewards.levelRewards.stream()
+                        .filter(x -> x.for_level == this.level)
+                        .findAny();
+
+                if (opt.isPresent()) {
+                    PlayerUtils.giveItem(LootTableItem.of(new Identifier(opt.get().loot_table_id)), player);
+                }
+
 
                 OnScreenMessageUtils.sendLevelUpMessage(player, new LiteralText("Player"), level - 1, level);
 

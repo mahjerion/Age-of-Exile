@@ -86,15 +86,21 @@ public class ComponentPart {
 
         Set<LivingEntity> list = new HashSet<>();
 
+        //System.out.println("try activate list: " + list);
+
         for (MapHolder part : targets) {
             BaseTargetSelector selector = BaseTargetSelector.MAP.get(part.type);
             list.addAll(selector.get(ctx.caster, ctx.target, ctx.pos, part));
         }
+        //System.out.println("targets: " + list);
 
         for (MapHolder part : acts) {
             SpellAction action = SpellAction.MAP.get(part.type);
             action.tryActivate(list, ctx, part);
         }
+        //System.out.println("acts: " + list);
+
+        //System.out.println("per_entity_hit: " + per_entity_hit);
 
         if (per_entity_hit != null) {
 
@@ -107,6 +113,7 @@ public class ComponentPart {
 
                     for (MapHolder part : onEn.ifs) {
                         EffectCondition condition = EffectCondition.MAP.get(part.type);
+                        //System.out.println("if can affect: " + part + "" + condition + (!condition.canActivate(chainedCtx, part)));
                         if (!condition.canActivate(chainedCtx, part)) {
                             return;
                         }
@@ -114,6 +121,7 @@ public class ComponentPart {
                     for (MapHolder part : onEn.acts) {
                         SpellAction action = SpellAction.MAP.get(part.type);
                         action.tryActivate(single, chainedCtx, part);
+                        //System.out.println("activate spell: " + part + "" + action);
                     }
 
                 }
