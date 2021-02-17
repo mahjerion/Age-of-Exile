@@ -1,3 +1,6 @@
+### v.1.7.12
+* fixed mobs spawning at minimum level always
+
 ### v1.7.11
 * fixed mob scaling in non-Overworld dimensions.
 * added level rewards which are configurable by datapacks
