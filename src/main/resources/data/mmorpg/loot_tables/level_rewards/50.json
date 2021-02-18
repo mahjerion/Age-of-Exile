@@ -5,17 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:apple",
+          "name": "mmorpg:identify_tome",
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 5
+              "count": 10
             }
           ]
         }
       ]
     },
-
     {
       "rolls": 1,
       "entries": [
@@ -25,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 3
+              "count": 5
             }
           ]
         }

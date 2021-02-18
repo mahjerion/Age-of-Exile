@@ -5,17 +5,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cooked_chicken",
+          "name": "minecraft:apple",
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 10
+              "count": 5
             }
           ]
         }
       ]
     },
-
     {
       "rolls": 1,
       "entries": [
@@ -25,7 +24,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 2
+              "count": 3
             }
           ]
         }
