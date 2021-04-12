@@ -1,7 +1,10 @@
-### v.1.7.13
+### v1.7.14
+* quick hotfix fixing some repair stuff for new items (won't affect already created items).
+
+### v1.7.13
 * fixed level rewards loot tables being in the wrong location.
 
-### v.1.7.12
+### v1.7.12
 * fixed mobs spawning at minimum level always.
 
 ### v1.7.11
