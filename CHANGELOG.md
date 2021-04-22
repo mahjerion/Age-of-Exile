@@ -1,4 +1,4 @@
-### v1.7.14
+### v1.7.15
 * quick hotfix fixing some repair stuff for new items (won't affect already created items).
 * hotfix for conflict with Fabric API update.
 
