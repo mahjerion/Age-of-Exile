@@ -112,7 +112,11 @@ public class MobAffix implements ISerializedRegistryEntry<MobAffix>, ISerializab
 
     @Override
     public void applyStats(EntityCap.UnitData data) {
-        this.stats.forEach(x -> x.ToExactStat(100, data.getLevel())
-            .applyStats(data));
+        if (data == null){
+            System.out.println("Mob affix applyStats entity data is null.");
+        } else {
+            this.stats.forEach(x -> x.ToExactStat(100, data.getLevel())
+                    .applyStats(data));
+        }
     }
 }

@@ -1,5 +1,6 @@
 ### v1.7.14
 * quick hotfix fixing some repair stuff for new items (won't affect already created items).
+* hotfix for conflict with Fabric API update.
 
 ### v1.7.13
 * fixed level rewards loot tables being in the wrong location.
